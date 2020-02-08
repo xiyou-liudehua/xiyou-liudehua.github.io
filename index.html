@@ -67,7 +67,7 @@
     <article id="post-todolist/todolist" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/08/todolist/todolist/" class="article-date">
-  <time datetime="2020-02-08T10:23:58.499Z" itemprop="datePublished">2020-02-08</time>
+  <time datetime="2020-02-08T10:27:55.592Z" itemprop="datePublished">2020-02-08</time>
 </a>
     
   </div>
@@ -228,7 +228,7 @@
             color: #666;
         }
         
-        a {
+        #clear {
             text-decoration: none;
             color: #666;
             cursor: pointer;
@@ -261,7 +261,7 @@
             </ul>
         </div>
         <footer class="ctn-footer">
-            Copyright © 2014 todolist.cn <a href="#">clear</a>
+            Copyright © 2014 todolist.cn <span id="clear">clear</span>
         </footer>
     </div>
     <script>
@@ -322,7 +322,7 @@
         var addBtn = document.getElementById('addbtn'); //添加按钮
         var inputValue = document.querySelector(".navcrn-ipt");
         var delAllBtn = document.querySelector('#delallbtn'); //获取全部清除按钮
-        var clear = document.querySelector('a'); //clear全部清除链接
+        var clear = document.querySelector('#clear'); //clear全部清除链接
         var midCtn = document.querySelector('.ctn-middle'); //找到中间部分的容器
 
         addBtn.addEventListener('click', function() {

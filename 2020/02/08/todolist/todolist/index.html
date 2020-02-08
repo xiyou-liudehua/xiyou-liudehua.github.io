@@ -14,8 +14,8 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="ToDoList—最简单的待办事项列表              * {             padding: 0;             margin: 0;         }         &#x2F;* 主容器部分 *&#x2F;                  .container,         body {             backgro">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-02-08T10:23:58.499Z">
-<meta property="article:modified_time" content="2020-02-08T10:23:26.397Z">
+<meta property="article:published_time" content="2020-02-08T10:27:55.592Z">
+<meta property="article:modified_time" content="2020-02-08T10:27:30.492Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,7 +69,7 @@
         <section id="main"><article id="post-todolist/todolist" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/08/todolist/todolist/" class="article-date">
-  <time datetime="2020-02-08T10:23:58.499Z" itemprop="datePublished">2020-02-08</time>
+  <time datetime="2020-02-08T10:27:55.592Z" itemprop="datePublished">2020-02-08</time>
 </a>
     
   </div>
@@ -230,7 +230,7 @@
             color: #666;
         }
         
-        a {
+        #clear {
             text-decoration: none;
             color: #666;
             cursor: pointer;
@@ -263,7 +263,7 @@
             </ul>
         </div>
         <footer class="ctn-footer">
-            Copyright © 2014 todolist.cn <a href="#">clear</a>
+            Copyright © 2014 todolist.cn <span id="clear">clear</span>
         </footer>
     </div>
     <script>
@@ -324,7 +324,7 @@
         var addBtn = document.getElementById('addbtn'); //添加按钮
         var inputValue = document.querySelector(".navcrn-ipt");
         var delAllBtn = document.querySelector('#delallbtn'); //获取全部清除按钮
-        var clear = document.querySelector('a'); //clear全部清除链接
+        var clear = document.querySelector('#clear'); //clear全部清除链接
         var midCtn = document.querySelector('.ctn-middle'); //找到中间部分的容器
 
         addBtn.addEventListener('click', function() {
